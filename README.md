@@ -37,7 +37,7 @@ SDC-ND Project 1
 
 
 Find my code at [Finding Lane Lines](https://github.com/jinglebot/Finding_Lane_Lines/).
-For a quick view of my code, open *P1.html* on your favorite browser. 
+For a quick view of my code, open [*P1.html*](https://github.com/jinglebot/Finding_Lane_Lines/blob/master/P1.html) on your favorite browser. 
 To run my code, open *Jupyter Notebook* via the *Anaconda* terminal. The following libraries are required:
 
 * _Matplotlib_
