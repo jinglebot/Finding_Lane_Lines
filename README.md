@@ -10,6 +10,7 @@ SDC-ND Project 1
 3. **My_Reflection_on_the_Finding_Lane_Lines_Project.md** - a *Markdown* write-up about my take on the project, my approach and musings on creating it
 4. **README.md** - an *Markdown* overview of the project repository
 5. **test_images_output** - folder containing the annotated version of the files from the *test_images* folder
+
 -The following files are in the *test_images_output* folder:
 
 ..a. [solidWhiteCurve](test_images_output/solidWhiteCurve_raw.jpg)
