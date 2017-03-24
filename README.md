@@ -13,12 +13,12 @@ SDC-ND Project 1
 
 - The following files are in the *test_images_output* folder:
 
-- 1. [solidWhiteCurve](test_images_output/solidWhiteCurve_raw.jpg)
-- 2. [solidWhiteRight](test_images_output/solidWhiteRight_raw.jpg)
-- 3. [solidYellowCurve](test_images_output/solidYellowCurve_raw.jpg)
-- 4. [solidYellowCurve2](test_images_output/solidYellowCurve2_raw.jpg)
-- 5. [solidYellowLeft](test_images_output/solidYellowLeft_raw.jpg)
-- 6. [whiteCarLaneSwitch](test_images_output/whiteCarLaneSwitch_raw.jpg)
+- 1. [solidWhiteCurve_raw](test_images_output/solidWhiteCurve_raw.jpg)
+- 2. [solidWhiteRight_raw](test_images_output/solidWhiteRight_raw.jpg)
+- 3. [solidYellowCurve_raw](test_images_output/solidYellowCurve_raw.jpg)
+- 4. [solidYellowCurve2_raw](test_images_output/solidYellowCurve2_raw.jpg)
+- 5. [solidYellowLeft_raw](test_images_output/solidYellowLeft_raw.jpg)
+- 6. [whiteCarLaneSwitch_raw](test_images_output/whiteCarLaneSwitch_raw.jpg)
 - 7. [solidWhiteCurve](test_images_output/solidWhiteCurve.jpg)
 - 8. [solidWhiteRight](test_images_output/solidWhiteRight.jpg)
 - 9. [solidYellowCurve](test_images_output/solidYellowCurve.jpg)
