@@ -1,9 +1,9 @@
 # Finding Lane Lines
 SDC-ND Project 1
 
-##This is my first project for the **Self-Driving Car Nanodegree Program**.
+## This is my first project for the **Self-Driving Car Nanodegree Program**.
 
-###The files contained in this repository are:
+### The files contained in this repository are:
 
 1.) **P1.ipynb** - a *Jupyter* notebook document written in *Python 3.5* with *Matplotlib, Numpy and Open CV* libraries
 2.) **P1.html** - a HTML version of P1.ipynb for a convenient peek of the codes
@@ -41,9 +41,9 @@ To run my code, open *Jupyter Notebook* via the *Anaconda* terminal. The followi
   
 ***
 
-##Project Overview 
+## Project Overview 
 
-###This is the first project in the *Nanodegree Program* with the following goals in mind:
+### This is the first project in the *Nanodegree Program* with the following goals in mind:
 
 1.) to be able to use the tools (e.g. Canny Edge Detection, Region of Interest, Hough Transform technique) we have learned about in the lesson to identify lane lines on the road,
 2.) to develop a pipeline on a series of individual images that finds and shows lane lines,
