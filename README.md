@@ -8,7 +8,7 @@ SDC-ND Project 1
 1. **P1.ipynb** - a *Jupyter* notebook document written in *Python 3.5* using *Matplotlib, Numpy and Open CV* libraries
 2. **P1.html** - a HTML version of P1.ipynb for a convenient peek of the codes
 3. **My_Reflection_on_the_Finding_Lane_Lines_Project.md** - a *Markdown* write-up about my take on the project, my approach and musings on creating it
-4. **README.md** - an *Markdown* overview of the project repository
+4. **README.md** - a *Markdown* overview of the project repository
 5. **test_images_output** - folder containing the annotated version of the files from the *test_images* folder
 
 - The following files are in the *test_images_output* folder:
@@ -37,7 +37,7 @@ SDC-ND Project 1
 
 
 Find my code at [Finding Lane Lines](https://github.com/jinglebot/Finding_Lane_Lines/).
-For a quick view of my code, open *P1.html* on you favorite browser. 
+For a quick view of my code, open *P1.html* on your favorite browser. 
 To run my code, open *Jupyter Notebook* via the *Anaconda* terminal. The following libraries are required:
 
 * _Matplotlib_
