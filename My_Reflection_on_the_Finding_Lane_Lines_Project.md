@@ -43,15 +43,16 @@ So now, instead of drawing line segments extracted from the *Hough Transform* te
 	
 My raw test images are:
 
-- [solidWhiteCurve](test_images_output/solidWhiteCurve_raw.jpg)
-- [solidWhiteRight](test_images_output/solidWhiteRight_raw.jpg)
-- [solidYellowCurve](test_images_output/solidYellowCurve_raw.jpg)
-- [solidYellowCurve2](test_images_output/solidYellowCurve2_raw.jpg)
-- [solidYellowLeft](test_images_output/solidYellowLeft_raw.jpg)
-- [whiteCarLaneSwitch](test_images_output/whiteCarLaneSwitch_raw.jpg)
+- [solidWhiteCurve_raw](test_images_output/solidWhiteCurve_raw.jpg)
+- [solidWhiteRight_raw](test_images_output/solidWhiteRight_raw.jpg)
+- [solidYellowCurve_raw](test_images_output/solidYellowCurve_raw.jpg)
+- [solidYellowCurve2_raw](test_images_output/solidYellowCurve2_raw.jpg)
+- [solidYellowLeft_raw](test_images_output/solidYellowLeft_raw.jpg)
+- [whiteCarLaneSwitch_raw](test_images_output/whiteCarLaneSwitch_raw.jpg)
 
 My raw video sample is this one:
 - [solidWhiteRight_raw](test_videos_output/solidWhiteRight_raw.mp4)
+- [solidYellowLeft_raw](test_videos_output/solidYellowLeft_raw.mp4)
 
 After the `draw_lines()` was improved, the resulting test images are:
 - [solidWhiteCurve](test_images_output/solidWhiteCurve.jpg)
@@ -62,6 +63,7 @@ After the `draw_lines()` was improved, the resulting test images are:
 - [whiteCarLaneSwitch](test_images_output/whiteCarLaneSwitch.jpg)
 
 My improved output videos are:
+- [solidWhiteRight](test_videos_output/solidWhiteRight.mp4)
 - [solidYellowLeft](test_videos_output/solidYellowLeft.mp4)
 
 ### 2. Potential shortcomings with my current pipeline
