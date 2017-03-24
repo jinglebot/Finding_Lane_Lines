@@ -11,7 +11,7 @@ SDC-ND Project 1
 4. **README.md** - an *Markdown* overview of the project repository
 5. **test_images_output** - folder containing the annotated version of the files from the *test_images* folder
 
-..*The following files are in the *test_images_output* folder:
+..* The following files are in the *test_images_output* folder:
 ..a. [solidWhiteCurve](test_images_output/solidWhiteCurve_raw.jpg)
 ..b. [solidWhiteRight]](test_images_output/solidWhiteRight_raw.jpg)
 ..c. [solidYellowCurve]](test_images_output/solidYellowCurve_raw.jpg)
@@ -27,7 +27,7 @@ SDC-ND Project 1
 
 6. **test_videos_output** - folder containing the annotated version of the files from the *test_videos* folder
 
-..The following files are in the *test_images_output* folder:
+..* The following files are in the *test_images_output* folder:
 ..a. [solidWhiteRight_raw](test_videos_output/solidWhiteRight_raw.mp4)
 ..b. [solidYellowLeft_raw](test_videos_output/solidYellowLeft_raw.mp4)
 ..c. [solidWhiteRight](test_videos_output/solidWhiteRight.mp4)
