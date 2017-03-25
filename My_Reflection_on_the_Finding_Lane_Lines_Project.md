@@ -31,7 +31,7 @@ See my code at [Github](https://github.com/jinglebot/Finding_Lane_Lines)
 ## My Reflection
 ### 1. Pipeline description
 
-My pipeline consisted of the steps as enumerated above. Here in my reflection, I would like to focus more on the important details like the parameters I used for computing *Canny Edge* and *Hough Transform*. I think I spent too much time tinkering on those values and running the pipeline to see the effect of changing the values. In the end, I decided on the *threshold* values of 50 and 200 for the *Canny Edge* computation and for the *Hough Transform*: a rho of 2, theta of pi / 180, threshold of 100, minimum line length of 100 and maximum line gap of 130.
+My pipeline consisted of the steps as enumerated above. Here in my reflection, I would like to focus more on the important details like the parameters I used for computing *Canny Edge* and *Hough Transform*. I think I spent too much time tinkering on those values and running the pipeline to see the effect of changing the values. After all the revisions, I decided on the *threshold* values of 50 and 150 for the *Canny Edge* computation and for the *Hough Transform*: a rho of 2, theta of pi / 180, threshold of 30, minimum line length of 8 and maximum line gap of 10.
 
 As for modifying the `draw_lines()` function in the *Hough Transform*, this was the first strategy I tried. First, I solved for the slope of each line in order to separate the left lines from the right. I summed up all the slope values of the lines on the left side and computed for the average. I also placed all the x values in its own list, and the y values in its own. I looked for the longest line(max)  and got its coordinates. I preferred the y values of the endpoints to be at the top and bottom of the *Region of Interest* polygon. And then, I used the average slope and the top and bottom y values in an extrapolation equation to get the endpoints' x values. I then dabbled between using the endpoints' values to draw the lane line or just draw segment extensions from the longest line to my preferred endpoints. And then, I repeated the same steps on the lines on the right side.
 
@@ -39,8 +39,12 @@ It worked actually. But then, it was too long and crude and not really accurate.
 
 So, this was my next strategy: to use the `polyfit()`. I separated the left and right lines using the slope formula. For the left lines first, I placed all the x values in its own list and the y values in a separate one. I used the `np.polyfit()` to get the coefficients. I then used them on `np.poly1d()` which is like the equation for y as a function x set in the *first degree*. I wanted my lane lines to be centered and separate at the top up to 1/7 of the screen width size and at the bottom, the whole screen width size. And so, since this time, the `poly1d()` function uses x values, I used as my preferred endpoints' x values for the left lane: 3/7 of the screen width at the top  and the left edge of the screen at the bottom. I used the `poly1d()` on the endpoints' x values to solve for the y values. I used the x and y endpoints values to draw the left lane line. I repeated the steps on the lines on the right side. I used 4/7 of the screen width as my preferred endpoint's x value at the top and the right edge of the screen as the endpoint's x value at the bottom. This makes the lane lines balance and centered.
 
+This strategy worked too. But there were times the lane lines would disappear in the videos. So my third strategy was to make sure there is a steady list of Hough lines to average so the lanes would stay the whole length of the video playback.
+
+My plan was too get the average mean as well as the standard deviation of the slopes of the lines. Starting with the left lane, I included only those lines within one standard deviation from the mean. I used `np.polyfit()` on the filtered lines and was able to solve for the endpoints' values. I used those values to draw the lane line and then I repeated the steps on the lines on the right lane. I'm hoping it would limit the stray lane lines, the jerkiness or the disappearing act and give me lines with fairly uniform slopes.
+
 So now, instead of drawing line segments extracted from the *Hough Transform* technique, the `draw_lines()` displayed only two extended lines, one for the lane on the left and one for the lane on the right.
-	
+
 My raw test images are:
 
 - [solidWhiteCurve_raw](test_images_output/solidWhiteCurve_raw.jpg)
